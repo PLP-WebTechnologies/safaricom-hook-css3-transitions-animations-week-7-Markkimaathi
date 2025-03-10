@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Animations</h1>
+        <p>Explore CSS transitions, animations, and JavaScript interactions</p>
+    </header>
+
+    <main>
+        <section class="calculator-section">
+            <h2>Rectangle Area Calculator</h2>
+            <div class="input-group">
+                <label for="width">Width:</label>
+                <input type="number" id="width" placeholder="Enter width">
+            </div>
+            <div class="input-group">
+                <label for="height">Height:</label>
+                <input type="number" id="height" placeholder="Enter height">
+            </div>
+            <button id="calculateBtn" class="calculate-btn">Calculate Area</button>
+            <div id="result"></div>
+        </section>
+
+        <section class="animation-section">
+            <h2>Interactive Animations</h2>
+            <div class="animation-controls">
+                <button id="toggleSpinner" class="animation-btn">Toggle Spinner</button>
+                <button id="toggleCard" class="animation-btn">Flip Card</button>
+                <button id="toggleModal" class="animation-btn">Show Modal</button>
+            </div>
+            
+            <div class="card-container">
+                <div class="card" id="interactiveCard">
+                    <div class="card-front">
+                        <h3>Hover</h3>
+                        <p>Click "Flip Card" to animate</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Card Flipped!</h3>
+                        <p>This is the back side of the card</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spinner-container">
+                <div class="spinner" id="spinner"></div>
+            </div>
+        </section>
+
+        <section class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h2>Welcome to Our Demo!</h2>
+                <p>This is an animated modal that appears when you click "Show Modal".</p>
+                <p>It demonstrates CSS transitions and JavaScript class toggling.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
